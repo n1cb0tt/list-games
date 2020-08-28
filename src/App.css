@@ -1,19 +1,11 @@
 .App {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  font-family: "Ubuntu Mono";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +14,122 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
+} */
+
+.gameCard {
+  display: grid;
+  background-color: #282c34;
+  color: orange;
+
+  margin: 50px;
+
+  box-shadow: 0px 10px 15px #282c34;
+
+  grid-template-areas:
+    "title    title title"
+    "left left right";
+  grid-gap: 20px;
+
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gameList {
+}
+
+.gameCard > div {
+  text-align: center;
+  padding: 0px 0px;
+  margin: 0;
+}
+
+.gameTitle {
+  grid-area: title;
+  padding: 0;
+  margin: 0;
+}
+
+.gameBgImage {
+  grid-area: left;
+}
+
+.gameDetails {
+  grid-area: right;
+}
+
+.btn {
+  width: 100%;
+  height: 1.2em;
+  background-color: orange;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  color: #282c34;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a,
+a:link,
+a:visited {
+  color: #282c34;
+  text-decoration: none;
+}
+
+progress {
+  color: #282c34;
+}
+
+.screenshot {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0px 10px 15px #282c34;
+}
+
+/* Font Ubuntu Mono */
+
+h1 {
+  font-family: "Ubuntu Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: "Ubuntu Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+p {
+  font-family: "Ubuntu Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: "Ubuntu Mono";
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: "Ubuntu Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
 }
